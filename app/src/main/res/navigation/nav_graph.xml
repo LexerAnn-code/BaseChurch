@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ankit.basechurch.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/offeringFragment"
+        android:name="com.ankit.basechurch.fragments.OfferingFragment"
+        android:label="fragment_tithes"
+        tools:layout="@layout/fragment_tithes" />
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.ankit.basechurch.activity.SplashActivity"
+        android:label="activity_splash"
+        tools:layout="@layout/activity_splash" />
+    <fragment
+        android:id="@+id/tithesFragment"
+        android:name="com.ankit.basechurch.fragments.TithesFragment"
+        android:label="fragment_tithes2"
+        tools:layout="@layout/fragment_tithes2" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.ankit.basechurch.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.ankit.basechurch.fragments.SignFragment"
+        android:label="fragment_sign"
+        tools:layout="@layout/fragment_sign" />
+    <fragment
+        android:id="@+id/addMemberFragment"
+        android:name="com.ankit.basechurch.fragments.AddMemberFragment"
+        android:label="fragment_add_member"
+        tools:layout="@layout/fragment_add_member" />
+</navigation>

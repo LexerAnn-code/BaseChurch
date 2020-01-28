@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="AppTheme.H1" parent="TextAppearance.MaterialComponents.Headline1">
+    <item name="fontFamily">@font/manjari_bold</item>
+</style>
+    <style name="AppTheme.H2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/manjari_bold</item>
+    </style>
+    <style name="AppTheme.H3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/manjari_bold</item>
+    </style>
+    <style name="AppTheme.H4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/manjari_bold</item>
+    </style>
+    <style name="AppTheme.H5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/manjari_bold</item>
+    </style>
+    <style name="AppTheme.H6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/manjari_bold</item>
+    </style>
+
+</resources>

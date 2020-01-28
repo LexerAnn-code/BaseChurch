@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.OfferingFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/OffT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.H5"
+        android:text="GhC" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Offering Amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginTop="40dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/OfferingAmountIn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/OfferingDateInL"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Date "
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/OfferingDateIn"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Add Tithes"/>
+</LinearLayout>

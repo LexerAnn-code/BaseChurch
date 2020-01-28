@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@id/offeringFragment"
+        android:title="Offerings"
+        android:icon="@drawable/ic_tithes"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@id/tithesFragment"
+        android:title="Tithes"
+        android:icon="@drawable/ic_admin"
+        app:showAsAction="always"
+        ></item>
+    <item
+        android:id="@id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@id/addMemberFragment"
+        android:title="Members"
+        android:icon="@drawable/ic_add"
+        app:showAsAction="never"></item>
+    <item
+        android:id="@id/signFragment"
+        android:title="Sign Out"
+        android:icon="@drawable/ic_signout"
+        app:showAsAction="never"
+        ></item>
+</menu>

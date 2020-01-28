@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SearchFragment"
+    android:orientation="vertical"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.textfield.TextInputEditText
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="GHC"
+        android:visibility="gone"
+        android:id="@+id/Summation"
+        />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/searchDateInput"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Search by Date"></com.google.android.material.textfield.TextInputEditText>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/searchRecycler"></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

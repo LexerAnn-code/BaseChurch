@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AddMemberFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Add Members Info"
+            app:navigationIcon="@drawable/ic_add"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/MemberLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:startIconDrawable="@drawable/ic_search"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:hint="Member's Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/MemberLayInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MemberRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

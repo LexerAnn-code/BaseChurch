@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditActivity">
+    <com.google.android.material.card.MaterialCardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/OfferingCard"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="6dp"
+        card_view:cardMaxElevation="10dp"
+       card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/Minamess"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icons"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="4dp"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Offerng Amount "
+                style="@style/AppTheme.H3"
+                android:textSize="20sp"
+                card_view:layout_constraintStart_toEndOf="@id/Minamess"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <EditText
+                android:id="@+id/OfferingCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="GH¢5000"
+                style="@style/AppTheme.H3"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"></EditText>
+
+            <EditText
+                android:id="@+id/OfferingDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text="12-05-2020"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@id/OfferingCash"></EditText>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        app:layout_constraintTop_toBottomOf="@id/OfferingCard"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ic_edit"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab2"
+        app:layout_constraintTop_toBottomOf="@id/OfferingCard"
+        app:layout_constraintRight_toLeftOf="@id/fab"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_del"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.OfferingFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/OfferingTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/AppTheme.H5"
+        android:text="GhC" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Offering Amount"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginTop="10dp">
+<com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/OfferingAmountInput"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Offeringdate"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Date "
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_marginTop="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/OfferingDateInput"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/addButtonOffering"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:text="Add Offering"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1025832566681",
+    "firebase_url": "https://basechurch-6319b.firebaseio.com",
+    "project_id": "basechurch-6319b",
+    "storage_bucket": "basechurch-6319b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025832566681:android:5430cacf3ef33355065d08",
+        "android_client_info": {
+          "package_name": "com.ankit.basechurch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025832566681-4o85ehg4j379vtamatvvpvbh7nhcp0bh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ankit.basechurch",
+            "certificate_hash": "e194ed353a47b9c062759c508372e99b20245480"
+          }
+        },
+        {
+          "client_id": "1025832566681-i03i34d3uv4sn3ar37fe7kae1ja5csmm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcClVTnztUMLPoU2qFg2_q_1Lye2fjRC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025832566681-i03i34d3uv4sn3ar37fe7kae1ja5csmm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

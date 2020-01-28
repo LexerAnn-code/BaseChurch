@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Login">
+
+
+
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/loginText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Log in to BaseChurch"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="30dp"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/loginText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Loginname"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="Email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/emailLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/LoginPassword"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:hint="Password" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="538dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loginvibe"
+                ></ImageView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <include
+        android:id="@+id/llProgressBar"
+        android:visibility="gone"
+        layout="@layout/progressbar"></include>
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/userLogin"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="40dp"
+        android:text="Log in"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
